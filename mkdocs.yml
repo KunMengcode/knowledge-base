@@ -1,0 +1,49 @@
+#基本信息
+site_name: 鲲梦-知识库
+site_description: 这是一个技术知识库
+site_author: Kun Meng
+site_url: https://doc.zhiliao.ink
+strict: false
+#版权信息
+copyright: 'Copyright &copy; 2022 鲲梦'
+#目录
+nav:
+  -  "简介": index.md
+#Git
+repo_url: https://github.com/KunMengcode/knowledge-base
+# 主题
+theme:
+  name: material
+  language: zh
+  logo: 'logo.svg'
+  favicon: 'logo_black.svg'
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.top
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+plugins:
+    - search:
+        lang:
+            - en
+            - ja
+        separator: '[\s\-\.]+'
